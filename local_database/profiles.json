@@ -1,0 +1,18 @@
+[
+  {
+    "id": "prof-owner",
+    "name": "Shop Owner (Admin)",
+    "role": "owner",
+    "pin": "1080",
+    "title": "Owner - Full Administrative Access",
+    "avatarColor": "from-amber-500 to-amber-700"
+  },
+  {
+    "id": "prof-staff",
+    "name": "Staff Cashier",
+    "role": "staff",
+    "pin": "1234",
+    "title": "Staff - Sales & Expenses",
+    "avatarColor": "from-blue-500 to-indigo-600"
+  }
+]

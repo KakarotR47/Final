@@ -1,0 +1,180 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: light dark;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for high density panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Print Styles for Receipts (80mm Thermal POS Size) */
+@media print {
+  @page {
+    size: 80mm auto;
+    margin: 0;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 1. HIDE APP WORKSPACE WHEN PRINTING RECEIPT, AND HIDE CONTROLS */
+  body.has-receipt-modal-open .main-workspace,
+  body.has-receipt-modal-open aside,
+  aside,
+  header,
+  .no-print,
+  .print-hide,
+  button,
+  nav {
+    display: none !important;
+  }
+
+  /* 2. Neutralize app wrapper so it doesn't clip or mangle children */
+  #root,
+  #root > div,
+  #root > div > div {
+    display: block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  /* 3. Modal Backdrop & Card Neutralization */
+  .receipt-modal-backdrop {
+    position: static !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  .receipt-modal-card {
+    position: static !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  .receipt-canvas-body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* 4. SHOW ONLY THE 80MM THERMAL SLIP */
+  .printable-area {
+    display: block !important;
+    position: static !important;
+    width: 78mm !important;
+    max-width: 80mm !important;
+    margin: 0 auto !important;
+    padding: 8mm 2mm 4mm 2mm !important; /* Top feed ensures printer cutter/tear bar never chops top of logo */
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 5. LOGO DISPLAY RULES - NO FILTER THAT DESTROYS PRINTING */
+  .receipt-logo-img {
+    display: block !important;
+    visibility: visible !important;
+    width: 58px !important;
+    height: 58px !important;
+    max-width: 58px !important;
+    max-height: 58px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    border-radius: 50% !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .receipt-logo-wrapper {
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: 2px solid #000000 !important;
+    width: 64px !important;
+    height: 64px !important;
+    padding: 2px !important;
+    box-sizing: border-box !important;
+    margin: 2px auto 4px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+  }
+
+  /* EOD and summary reports */
+  .printable-report {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+    color: black !important;
+  }
+}

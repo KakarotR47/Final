@@ -1,0 +1,6 @@
+{
+  "name": "ShopKeep POS & Inventory Manager",
+  "description": "Retail shop management, point-of-sale register, live stock tracking, expense ledger, daily profit analytics, low inventory alerts, and end-of-day sales reporting with receipt printing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

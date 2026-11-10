@@ -1,0 +1,32 @@
+[
+  {
+    "id": "exp-01",
+    "date": "2026-11-09",
+    "timestamp": "2026-11-10T03:30:00.000Z",
+    "category": "Packaging & Supplies",
+    "description": "Thermal receipt paper rolls & packing envelopes",
+    "amount": 1200,
+    "paymentMethod": "cash",
+    "receiptRef": "SUPP-8812"
+  },
+  {
+    "id": "exp-02",
+    "date": "2026-11-09",
+    "timestamp": "2026-11-10T07:15:00.000Z",
+    "category": "Staff Wages",
+    "description": "Daily assistant cashier & clerk allowance",
+    "amount": 2500,
+    "paymentMethod": "cash",
+    "receiptRef": "PAY-1102"
+  },
+  {
+    "id": "exp-03",
+    "date": "2026-11-09",
+    "timestamp": "2026-11-10T09:00:00.000Z",
+    "category": "Inventory Freight",
+    "description": "Paper mill wholesale reams delivery transport fare",
+    "amount": 1500,
+    "paymentMethod": "bank_transfer",
+    "receiptRef": "LOG-772"
+  }
+]

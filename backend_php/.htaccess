@@ -1,0 +1,36 @@
+# ====================================================================
+# SA Brothers Vendors POS - Apache & cPanel Configuration
+# ====================================================================
+
+Options -Indexes
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Allow direct access to existing files and directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Don't rewrite /api/ or /backend_php/
+    RewriteCond %{REQUEST_URI} !^/api/
+    RewriteCond %{REQUEST_URI} !^/backend_php/
+
+    # Route everything else to index.html (SPA client-side routing)
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# Enable CORS for API requests
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+</IfModule>
+
+# Protect sensitive database files from public web downloads
+<FilesMatch "\.(sql|env|log)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

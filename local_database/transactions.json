@@ -1,0 +1,227 @@
+[
+  {
+    "id": "tx-1001",
+    "receiptNumber": "RCP-20261109-0001",
+    "timestamp": "2026-11-10T04:14:00.000Z",
+    "items": [
+      {
+        "productId": "court-v5-002",
+        "name": "Rs100 Stamp",
+        "sku": "CRT-STP-100",
+        "quantity": 2,
+        "unitPrice": 100,
+        "costPrice": 96,
+        "total": 200,
+        "profit": 8
+      },
+      {
+        "productId": "court-v5-008",
+        "name": "Rs100-Agreements",
+        "sku": "CRT-AGR-100",
+        "quantity": 1,
+        "unitPrice": 130,
+        "costPrice": 90,
+        "total": 130,
+        "profit": 40
+      }
+    ],
+    "subtotal": 330,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "taxRate": 0,
+    "taxAmount": 0,
+    "grandTotal": 330,
+    "totalCost": 282,
+    "grossProfit": 48,
+    "paymentMethod": "cash",
+    "amountTendered": 500,
+    "changeDue": 170,
+    "customerName": "Advocate Tariq Mehmood",
+    "customerPhone": "0300-5551234",
+    "cashierName": "Muhammad Ali (Counter 1)",
+    "status": "completed"
+  },
+  {
+    "id": "tx-1002",
+    "receiptNumber": "RCP-20261109-0002",
+    "timestamp": "2026-11-10T06:30:00.000Z",
+    "items": [
+      {
+        "productId": "paper-v6-001",
+        "name": "A4 Rim",
+        "sku": "PPR-A4-RIM",
+        "quantity": 3,
+        "unitPrice": 1250,
+        "costPrice": 950,
+        "total": 3750,
+        "profit": 900
+      },
+      {
+        "productId": "paper-v6-002",
+        "name": "Legal Rim",
+        "sku": "PPR-LGL-RIM",
+        "quantity": 1,
+        "unitPrice": 1550,
+        "costPrice": 1200,
+        "total": 1550,
+        "profit": 350
+      },
+      {
+        "productId": "paper-v6-004",
+        "name": "Legal-100p",
+        "sku": "PPR-LGL-100P",
+        "quantity": 2,
+        "unitPrice": 380,
+        "costPrice": 260,
+        "total": 760,
+        "profit": 240
+      }
+    ],
+    "subtotal": 6060,
+    "discountAmount": 200,
+    "discountPercent": 3.3,
+    "taxRate": 0,
+    "taxAmount": 0,
+    "grandTotal": 5860,
+    "totalCost": 4570,
+    "grossProfit": 1290,
+    "paymentMethod": "cash",
+    "amountTendered": 6000,
+    "changeDue": 140,
+    "customerName": "Legal Chamber of Kamran Shah",
+    "cashierName": "Muhammad Ali (Counter 1)",
+    "status": "completed"
+  },
+  {
+    "id": "tx-1003",
+    "receiptNumber": "RCP-20261109-0003",
+    "timestamp": "2026-11-10T08:45:00.000Z",
+    "items": [
+      {
+        "productId": "court-v5-004",
+        "name": "Rs500 Stamp",
+        "sku": "CRT-STP-500",
+        "quantity": 2,
+        "unitPrice": 500,
+        "costPrice": 480,
+        "total": 1000,
+        "profit": 40
+      },
+      {
+        "productId": "court-v5-010",
+        "name": "Notry/Auth Stamp",
+        "sku": "CRT-NTR-AUTH",
+        "quantity": 1,
+        "unitPrice": 300,
+        "costPrice": 150,
+        "total": 300,
+        "profit": 150
+      }
+    ],
+    "subtotal": 1300,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "taxRate": 0,
+    "taxAmount": 0,
+    "grandTotal": 1300,
+    "totalCost": 1110,
+    "grossProfit": 190,
+    "paymentMethod": "mobile_qr",
+    "amountTendered": 1300,
+    "changeDue": 0,
+    "customerName": "Malik Zafar",
+    "cashierName": "Muhammad Ali (Counter 1)",
+    "status": "completed"
+  },
+  {
+    "id": "tx-1004",
+    "receiptNumber": "RCP-20261109-0004",
+    "timestamp": "2026-11-10T10:20:00.000Z",
+    "items": [
+      {
+        "productId": "paper-v6-003",
+        "name": "A4-100p",
+        "sku": "PPR-A4-100P",
+        "quantity": 2,
+        "unitPrice": 300,
+        "costPrice": 200,
+        "total": 600,
+        "profit": 200
+      },
+      {
+        "productId": "court-v5-001",
+        "name": "Rs50 Stamp",
+        "sku": "CRT-STP-050",
+        "quantity": 4,
+        "unitPrice": 50,
+        "costPrice": 48,
+        "total": 200,
+        "profit": 8
+      },
+      {
+        "productId": "paper-v6-005",
+        "name": "Ledger-70g",
+        "sku": "PPR-LDG-70G",
+        "quantity": 10,
+        "unitPrice": 12,
+        "costPrice": 8,
+        "total": 120,
+        "profit": 40
+      }
+    ],
+    "subtotal": 920,
+    "discountAmount": 0,
+    "discountPercent": 0,
+    "taxRate": 0,
+    "taxAmount": 0,
+    "grandTotal": 920,
+    "totalCost": 672,
+    "grossProfit": 248,
+    "paymentMethod": "card",
+    "amountTendered": 920,
+    "changeDue": 0,
+    "customerName": "Zubair Ahmed",
+    "cashierName": "Muhammad Ali (Counter 1)",
+    "status": "completed"
+  },
+  {
+    "id": "tx-1005",
+    "receiptNumber": "RCP-20261109-0005",
+    "timestamp": "2026-11-10T11:50:00.000Z",
+    "items": [
+      {
+        "productId": "court-v5-006",
+        "name": "Backdate Stamp",
+        "sku": "CRT-STP-BKD",
+        "quantity": 1,
+        "unitPrice": 1200,
+        "costPrice": 900,
+        "total": 1200,
+        "profit": 300
+      },
+      {
+        "productId": "paper-v6-012",
+        "name": "Sale/Transfer Delievery Book",
+        "sku": "PPR-SL-BK",
+        "quantity": 2,
+        "unitPrice": 320,
+        "costPrice": 220,
+        "total": 640,
+        "profit": 200
+      }
+    ],
+    "subtotal": 1840,
+    "discountAmount": 40,
+    "discountPercent": 2.2,
+    "taxRate": 0,
+    "taxAmount": 0,
+    "grandTotal": 1800,
+    "totalCost": 1340,
+    "grossProfit": 460,
+    "paymentMethod": "cash",
+    "amountTendered": 2000,
+    "changeDue": 200,
+    "cashierName": "Muhammad Ali (Counter 1)",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "shopName": "SA Brothers Vendors",
+  "tagline": "Court Stamp Vendors & Legal Paper",
+  "address": "Shop #14, District Court Complex, Main Law Bazaar",
+  "phone": "+923401645979, +923002634491",
+  "helpline": "+923401645979, +923002634491",
+  "licenseNumber": "Gos-KHI 18",
+  "email": "contact@sabrothersvendors.com",
+  "taxNumber": "PK-NTN-8924018",
+  "currency": "PKR",
+  "taxRatePercent": 0,
+  "receiptHeader": "Thank you for choosing SA Brothers Vendors!",
+  "receiptFooter": "Court stamp papers & legal forms verified authentic. Shukriya!",
+  "defaultCashFloat": 10000,
+  "cashierName": "Muhammad Ali (Counter 1)"
+}
